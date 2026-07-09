@@ -1,0 +1,27 @@
+{
+  "expo": {
+    "name": "МОЗАИКА",
+    "slug": "mosaika",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "backgroundColor": "#090B18",
+    "splash": {
+      "backgroundColor": "#090B18"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "ru.cybereden.mosaika"
+    },
+    "android": {
+      "package": "ru.cybereden.mosaika",
+      "adaptiveIcon": {
+        "backgroundColor": "#090B18"
+      }
+    },
+    "web": {
+      "bundler": "metro"
+    }
+  }
+}
