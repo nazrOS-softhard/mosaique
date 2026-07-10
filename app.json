@@ -2,6 +2,7 @@
   "expo": {
     "name": "МОЗАИКА",
     "slug": "mosaika",
+    "owner": "nazrOS-softhard",
     "version": "0.1.0",
     "orientation": "portrait",
     "userInterfaceStyle": "dark",
