@@ -26,8 +26,10 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Link or create EAS project
-        run: eas init --non-interactive --force
+      # Шаг eas init удалён, потому что проект уже существует на Expo
+      # Если нужно пересоздать — раскомментируй, но тогда удали проект вручную через сайт
+      # - name: Link or create EAS project
+      #   run: eas init --non-interactive --force
 
       - name: Trigger cloud build (APK)
         run: eas build --platform android --profile preview --non-interactive --no-wait
