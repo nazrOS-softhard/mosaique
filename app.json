@@ -1,8 +1,8 @@
 {
   "expo": {
     "name": "МОЗАИКА",
-    "slug": "mosaika",
-    "owner": "nazrOS-softhard",
+    "slug": "mosaique",
+    "owner": "nazros",
     "version": "0.1.0",
     "orientation": "portrait",
     "userInterfaceStyle": "dark",
@@ -23,6 +23,11 @@
     },
     "web": {
       "bundler": "metro"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "СЮДА_ВСТАВЬ_PROJECT_ID"
+      }
     }
   }
 }
