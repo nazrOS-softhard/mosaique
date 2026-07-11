@@ -15,7 +15,13 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: 22
+          node-version: 20
+
+      - name: Force Node 22 (override)
+        run: |
+          curl -fsSL https://deb.nodesource.com/setup_22.x | sudo -E bash -
+          sudo apt-get install -y nodejs
+          node --version
 
       - name: Setup EAS
         uses: expo/expo-github-action@v8
@@ -25,10 +31,6 @@ jobs:
 
       - name: Install dependencies
         run: npm install
-
-      # Шаг eas init удалён, потому что проект уже существует на Expo
-      # - name: Link or create EAS project
-      #   run: eas init --non-interactive --force
 
       - name: Trigger cloud build (APK)
         run: eas build --platform android --profile preview --non-interactive --no-wait
